@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+</head>
+<style>
+    body{
+        background-color: lightgrey;
+    }
+    h1{
+        font-family: 'Baskerville';
+        margin-top: 30px;
+        color: black;
+        text-align: center;
+    }
+    div img{
+        position: absolute;
+		left: 20px;
+		top: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    div .btn{
+        position: absolute;
+		right: 35px;
+		top: 30px;
+    }
+    nav button{
+        font-family: 'Baskerville';
+        font-size: 15px;
+        cursor: pointer;
+        padding: 2px 10px;
+        border: 1.5px solid black;
+    }
+    h2{
+        text-align: center;
+    }
+    .container{
+        background-color: darkgrey;
+        position: absolute;
+        border: 2px solid black;
+        margin: 25px 50px;
+        padding: 35px;
+        width: 500px;
+        top: 125px;
+        left: 340px;
+    }
+    .inputs input{
+        font-family: "baskerville";
+		text-align: center;
+        display: block;
+        width: 350px;
+		padding: 1px;
+        border: 2px solid black;
+		margin: 10px auto;
+		font-size: 20px;
+    }
+    .container button {
+        display: block;
+		width: 130px;
+		margin: 20px auto;
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+</style>
+<body>
+    <nav>
+        <h1>User Interface Form</h1>
+        <div>
+			<img src="images.jpg" alt="No image">
+		</div>
+        <div class="btn">
+			<button class="btn">Info</button>
+		</div>
+    </nav>
+    <div class="container">
+        <h2>USER DETAILS</h2>
+        <form action="">
+            <div class="inputs">
+                <input 
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Enter your name">
+            </div>
+            <div class="inputs">
+                <input 
+                type="text"
+                name="Age"
+                id="Age"
+                placeholder="Enter your Age">
+            </div>
+            <div class="inputs">
+                <input 
+                type="text"
+                name="Gender"
+                id="Gender"
+                placeholder="Enter your Gender">
+            </div>
+            <div class="inputs">
+                <input 
+                type="text"
+                name="Locality"
+                id="Locality"
+                placeholder="Enter your Locality">
+            </div>
+            <div class="inputs">
+                <input 
+                type="text"
+                name="Emailid"
+                id="Emailid"
+                placeholder="Enter your Email-id">
+            </div>
+            <button>Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
